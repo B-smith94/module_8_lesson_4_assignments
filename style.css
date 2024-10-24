@@ -1,0 +1,39 @@
+/*
+Task 1: Apply RGBA Background Colors
+    -make a class called .background-fade and apply it to a div element
+    -use RGBA to set a semi-transparent background color
+Task 2: Enhance Text Visibillity with RGBA
+    -add text shadow using RGBA for color and opacity to h1 tag
+Task 3: Interactive Buttons with RGBA Hover Effects
+    -Design a button with a solid RGBA Background
+    -implement :hover effects that change the background color
+*/
+
+/*Task 1*/
+.background-fade {
+    background-color: rgba(78, 75, 236, 0.5);
+}
+
+/*Task 2*/
+h1 {
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5)
+}
+
+/*Task 3*/
+button {
+    background-color: rgba(0, 63, 114, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border: solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(30, 179, 0, 0.5);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 13px 19px;
+    font-size: 15px;
+    font-family: cursive, sans-serif;
+}

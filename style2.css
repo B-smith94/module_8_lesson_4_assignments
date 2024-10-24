@@ -1,0 +1,51 @@
+/*
+Task 1: Smooth Hover Transition for Links
+    -Create a CSS Transition for all <a> elements so that their color smoothly changes when hovered over
+Task 2: Animated Button on Click
+    -Implement @keyframe that slightly increases button size when clicked
+Task 3: Continuous Rotation Animation for an Icon
+    -Apply a @keyframe rotation to an image indefinitely*/
+
+/*Task 1*/
+a {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: blue;
+    transition: color .5s ease-in-out;
+}
+a:visited {
+    color: blue;
+} 
+a:hover {
+    color: rgba(0, 211, 63, 0.8)
+}
+
+/*Task 2*/
+button {
+    background-color: rgba(0, 211, 63, 0.8);
+    color: darkblue;
+    padding: 10px 15px;
+    border: solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@keyframes scale {
+    from {transform: scale(1)};
+    to {transform: scale(2)};
+}
+button:focus{
+    animation: scale 3s ease infinite;
+}
+/*Task 3*/
+img {
+    width: 200px;
+    height: auto;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg)};
+    to {transform: rotate(360deg)};
+}
+img {
+    animation: rotate 10s infinite;
+}
